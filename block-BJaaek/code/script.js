@@ -3,11 +3,27 @@ let boxTwo = document.querySelector('.box-two');
 let clickBtn = document.querySelector('.click-btn');
 let mouseMoveBtn = document.querySelector('.mouse-move-btn');
 
-const genBg = (element) => {
-  const randomColor = Math.floor(Math.random() * 16777215).toString(16);
-  element.style.backgroundColor = '#' + randomColor;
+function generateRandomColor() {
+  let hexCharacters = ['0', '1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'];
+  let color = '#';
+
+  for(let i =0; i <6; i++) {
+    let randomNumber = Math.floor(Math.random() * 16);
+    color = color + hexCharacters[randomNumber];
+  }
+  return color;
 }
 
-clickBtn.addEventListener('click', () => genBg(boxOne));
+function handleClick () {
+   let randomColor = generateRandomColor();
+   boxOne.style.backgroundColor = randomColor;
+}
 
-mouseMoveBtn.addEventListener('mousemove', () => genBg(boxTwo));
+function handleMouseMove () {
+  let randomColor = generateRandomColor();
+  boxTwo.style.backgroundColor = randomColor;
+}
+
+boxOne.addEventListener('click', handleClick);
+
+boxTwo.addEventListener('mousemove', handleMouseMove);
