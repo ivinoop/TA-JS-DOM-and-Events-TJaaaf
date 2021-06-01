@@ -64,7 +64,6 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     padding: .5rem;
-    margin: 5rem 0;
 }
 
 .calculator {
@@ -87,7 +86,7 @@ button {
   width: 100%;
   padding: 1rem; 
   font-size: 2rem;
-  font-weight: 900;
+  font-weight: 600;
   display: inline-block;
   margin-bottom: 1rem;
   border: none;
