@@ -3,9 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock Paper and Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b9753e102f.js" crossorigin="anonymous"></script>
+    <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <script src="./script.js"></script>
+    <div class="container">
+      <div class="game-container flex jcc aic column">
+        <h1 class="heading">Rock Paper Scissors</h1>
+        <div class="game">
+          <section class="player-you">
+            <h3 class="you">You</h3>
+            <div class="icon">
+              <i class="far fa-hand-rock"></i>
+              <i class="far fa-hand-paper"></i>
+              <i class="far fa-hand-scissors"></i>
+            </div>
+          </section>
+          <section class="player-computer">
+            <h3 class="computer">Computer</h3>
+            <div class="icon">
+              <i class="far fa-hand-rock"></i>
+              <i class="far fa-hand-paper"></i>
+              <i class="far fa-hand-scissors"></i>
+            </div>
+          </section>
+          <div class="reset">
+            <i class="fas fa-redo"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
