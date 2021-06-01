@@ -109,24 +109,43 @@ h1 {
   margin: 2rem 0;
 }
 
-.icon {
+.user-icons, .computer-icons {
   margin: 1rem 0;
 }
 
 i {
   margin-right: 2rem;
   font-size: 4rem;
+  cursor: pointer;
 }
 
-.player-you i {
+.user-icons i {
   color: #1C90FF;
 }
 
-.player-computer i {
+.computer-icons i {
   color: red;
 }
 
-.reset i {
-  font-size: 2.3rem;
+.result {
+  font-size: 2rem;
+  color: green;
   font-weight: 600;
+  text-align: center;
+}
+
+.reset-btn {
+  text-align: center;
+}
+
+button {
+  background-color: slateblue;
+  outline: none;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 0.4rem;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
 }
