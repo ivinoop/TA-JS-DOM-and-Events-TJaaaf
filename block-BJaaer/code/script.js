@@ -18,6 +18,8 @@ form.addEventListener('submit', (event) => {
   console.log(formInfo.name);
 
   modal.classList.add('open');
+  modal.style.display = "block";
+  displayInfo(formInfo);
 });
 
 let close = document.querySelector('.modal-close');
@@ -27,18 +29,12 @@ let close = document.querySelector('.modal-close');
 
 let submit = document.querySelector('.submit');
 submit.addEventListener('click', () => {
-  modal.style.display = "block";
-    function displayInfo(data) {
-    let h1 = document.createElement('h1');
-    h1.innerText = `Hello ${data.name}`;
-    modalInfo.append(h1);
-  }
-  displayInfo(formInfo); 
 });
 
-// function displayInfo(data) {
-//   let h1 = document.createElement('h1');
-//   h1.innerText = `Hello ${data.name}`;
-//   modalInfo.append(h1);
-// } 
+function displayInfo(data) {
+  console.log(data);
+  let h1 = document.createElement('h1');
+  h1.innerText = `Hello ${data.name}`;
+  modalInfo.append(h1);
+} 
 
