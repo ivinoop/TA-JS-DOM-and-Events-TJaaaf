@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Handeling Forms 👇</title>
+    <title>Handling Forms 👇</title>
   </head>
   <body>
     <div>
@@ -14,7 +14,7 @@
           <input
             id="name"
             type="text"
-            name="text"
+            name="name"
             placeholder="Enter your name"
           />
         </div>
@@ -28,8 +28,8 @@
           />
         </div>
         <div class="form-control">
-          <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <label for="love">What do you love?</label>
+          <select id="love" name="love">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
@@ -41,7 +41,7 @@
           <input
             id="color"
             type="color"
-            name="email"
+            name="color"
             placeholder="Enter your email"
           />
         </div>
@@ -52,7 +52,7 @@
             type="range"
             max="10"
             step="1"
-            name="email"
+            name="range"
             placeholder="Enter your email"
           />
         </div>
@@ -63,7 +63,7 @@
             <input
               type="radio"
               id="fiction"
-              name="drone"
+              name="fiction"
               value="fiction"
               checked
             />
@@ -74,14 +74,14 @@
             <input
               type="radio"
               id="non-fiction"
-              name="drone"
+              name="non-fiction"
               value="non-fiction"
             />
             <label for="non-fiction">Non Fiction</label>
           </div>
 
           <div>
-            <input type="radio" id="adventure" name="drone" value="adventure" />
+            <input type="radio" id="adventure" name="adventure" value="adventure" />
             <label for="adventure">Adventure</label>
           </div>
         </div>
@@ -89,9 +89,9 @@
           <input type="checkbox" id="terms" name="terms" />
           <label for="terms">I Agree to Terms</label>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" value="submit">Submit</button>
       </form>
     </div>
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

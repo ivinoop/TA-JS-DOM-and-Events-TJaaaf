@@ -57,13 +57,14 @@ body {
 
 input[type='text'] {
   padding: 0.5rem 1rem;
-  border: none;
+  margin-top: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
 }
 select {
   padding: 0.5rem 1rem;
-  border: none;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.4rem;
 }
 
 .container {
