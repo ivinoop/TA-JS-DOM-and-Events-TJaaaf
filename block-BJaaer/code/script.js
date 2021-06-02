@@ -1,21 +1,44 @@
 let form = document.querySelector('form');
+let modal = document.querySelector('.modal-display');
+let modalInfo = document.querySelector('.modal-info');
 
 let formInfo = {};
 
-function handleSubmit(event) {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
+  let elements = event.target.elements;
+  formInfo.name = elements.name.value;
+  formInfo.email = elements.email.value;
+  formInfo.love = elements.love.value;
+  formInfo.color = elements.color.value;
+  formInfo.range = elements.range.value;
+  formInfo.book = elements.book.value;
+  formInfo.terms = elements.terms.value;
 
-  formInfo.adventure = form.elements.adventure.value;
-  formInfo.name = form.elements.name.value;
-  formInfo.email = form.elements.email.value;
-  formInfo.love = form.elements.love.value;
-  formInfo.color = form.elements.color.value;
-  formInfo.range = form.elements.range.value;
-  formInfo.terms = form.elements.terms.checked;
-  formInfo.fiction = form.elements.fiction.checked;
-  // formInfo.non-fiction = form.elements.non-fiction.checked;
+  console.log(formInfo.name);
 
-  console.log(formInfo);
-}
+  modal.classList.add('open');
+});
 
-form.addEventListener('submit', handleSubmit);
+let close = document.querySelector('.modal-close');
+  close.addEventListener('click', () => { 
+    modal.style.display = "none";
+  });
+
+let submit = document.querySelector('.submit');
+submit.addEventListener('click', () => {
+  modal.style.display = "block";
+    function displayInfo(data) {
+    let h1 = document.createElement('h1');
+    h1.innerText = `Hello ${data.name}`;
+    modalInfo.append(h1);
+  }
+  displayInfo(formInfo); 
+});
+
+// function displayInfo(data) {
+//   let h1 = document.createElement('h1');
+//   h1.innerText = `Hello ${data.name}`;
+//   modalInfo.append(h1);
+// } 
+

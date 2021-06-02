@@ -92,3 +92,26 @@ input[type='text'] {
 .terms {
   display: inline-block;
 }
+
+form {
+  z-index: 1;
+}
+
+/* Modal */
+
+.modal-display {
+  position: absolute;
+  padding: 3rem;
+  width: 300px;
+  height: 400px;
+  background-color: rgb(204, 190, 190);
+  border-radius: 0.4rem;
+  border: 0.1rem solid gray;
+  z-index: 22;
+  outline: none;
+  margin-top: 4rem;
+  top: 0;
+  left: 32%;
+  display: none;
+}
+
