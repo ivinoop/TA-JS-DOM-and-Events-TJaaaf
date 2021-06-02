@@ -63,7 +63,7 @@
             <input
               type="radio"
               id="fiction"
-              name="fiction"
+              name="book"
               value="fiction"
               checked
             />
@@ -74,14 +74,14 @@
             <input
               type="radio"
               id="non-fiction"
-              name="non-fiction"
+              name="book"
               value="non-fiction"
             />
             <label for="non-fiction">Non Fiction</label>
           </div>
 
           <div>
-            <input type="radio" id="adventure" name="adventure" value="adventure" />
+            <input type="radio" id="adventure" name="book" value="adventure" />
             <label for="adventure">Adventure</label>
           </div>
         </div>
@@ -89,8 +89,15 @@
           <input type="checkbox" id="terms" name="terms" />
           <label for="terms">I Agree to Terms</label>
         </div>
-        <button type="submit" value="submit">Submit</button>
+        <button class = "submit" type="submit" value="submit">Submit</button>
       </form>
+      <div class="modal-display open">
+        <div class="relative">
+          <button id = "close" class="modal-close">X</button>
+          <div class="modal-info">
+          </div>
+        </div>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>
