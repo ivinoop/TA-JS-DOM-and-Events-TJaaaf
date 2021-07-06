@@ -1,7 +1,164 @@
-* {
-  box-sizing: border-box;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
 }
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom */
+
+/* General */
+
+html {
+  font-size: 16px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background-color: #F4F5F9;
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-30 {
+  flex: 0 1 30%;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+img {
+  border-radius: 50%;
+}
+
+a {
+  text-decoration: none;
+  background-color: #E7EDFD;
+  padding: 0.8rem 2rem;
+  display: block;
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+/* Header */ 
+
+header {
+  background-color: #4075D4;
+  padding: 1.4rem;
+  text-align: center;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+input {
+  display: inline-block;
+  border-radius: 0.8rem;
+  border: none;
+  width: 16rem;
+  outline: 0;
+  padding: 0.6rem 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Main */
+
+/* Tags */
+
+.family-tags {
+  text-align: center;
+}
+
+.tag {
+  background-color: black;
+  padding: 0.7rem;
+  color: #fff;
+  border-radius: 0.8rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0 0.2rem;
+}
+
+/* Cards */
+
+.people-card {
+  box-shadow: 0.2rem 0.2rem 0.7rem gray;
+  margin: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+.infoDiv {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  margin-left: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
 }
